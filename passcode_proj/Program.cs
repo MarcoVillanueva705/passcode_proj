@@ -6,7 +6,24 @@ namespace passcode_proj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var code = "";
+
+            while (code != "frites")
+            {
+
+                Console.WriteLine("Please enter the secret word!");
+                code = Console.ReadLine();
+
+                if (code == "frites")
+                {
+                    Console.WriteLine("You may enter...");
+                }
+                else if (code != "frites")
+                {
+                    Console.WriteLine("Incorrect...try again");
+
+                }
+            }
         }
     }
 }
